@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="578.0" prefWidth="826.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DbScanWindowController">
+   <children>
+      <TableView fx:id="ClustersTab" layoutX="24.0" layoutY="252.0" prefHeight="256.0" prefWidth="273.0">
+        <columns>
+          <TableColumn fx:id="ClusteColumn" prefWidth="141.0" text="Cluster" />
+            <TableColumn fx:id="tailleColumn" prefWidth="131.0" text="Taille" />
+        </columns>
+      </TableView>
+      <TableView fx:id="InstancesTab" layoutX="317.0" layoutY="252.0" prefHeight="256.0" prefWidth="491.0">
+         <columns>
+            <TableColumn fx:id="InstanceColumn" prefWidth="490.0" text="Instances" />
+         </columns>
+      </TableView>
+      <TextField fx:id="EpsTxt" layoutX="121.0" layoutY="60.0" />
+      <TextField fx:id="MinPtsTxt" layoutX="121.0" layoutY="122.0" />
+      <TextField fx:id="TTxt" layoutX="544.0" layoutY="60.0" />
+      <TextField fx:id="WTxt" layoutX="544.0" layoutY="122.0" />
+      <Label layoutX="74.0" layoutY="60.0" prefHeight="25.0" prefWidth="41.0" text="Eps" />
+      <Label layoutX="61.0" layoutY="122.0" prefHeight="25.0" prefWidth="54.0" text="MinPts" />
+      <Label layoutX="381.0" layoutY="60.0" prefHeight="25.0" prefWidth="147.0" text="Inertie interclasse T" />
+      <Label layoutX="381.0" layoutY="122.0" prefHeight="25.0" prefWidth="141.0" text="Inertie intraclasse W" />
+      <Button fx:id="LanerButton" layoutX="136.0" layoutY="187.0" mnemonicParsing="false" onAction="#LancerAction" prefHeight="25.0" prefWidth="147.0" text="Lancer" />
+   </children>
+</AnchorPane>

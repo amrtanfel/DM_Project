@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="558.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.KnnWindowController">
+   <children>
+      <TableView fx:id="resultTab" layoutX="15.0" layoutY="251.0" prefHeight="250.0" prefWidth="646.0">
+        <columns>
+          <TableColumn fx:id="instanceColumn" prefWidth="389.0" text="Instance" />
+          <TableColumn fx:id="ClassifColumn" minWidth="0.0" prefWidth="113.0" text="Classication" />
+            <TableColumn fx:id="KnnColumn" minWidth="0.0" prefWidth="143.0" text="Knn Classification" />
+        </columns>
+      </TableView>
+      <TextField fx:id="KValue" layoutX="70.0" layoutY="49.0" />
+      <TextField fx:id="PourValue" layoutX="70.0" layoutY="123.0" />
+      <TextArea fx:id="DetailText" layoutX="376.0" layoutY="50.0" prefHeight="172.0" prefWidth="274.0" />
+      <Label layoutX="70.0" layoutY="24.0" prefHeight="25.0" prefWidth="39.0" text="K:">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="94.0" prefHeight="25.0" prefWidth="85.0" text="Training %:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="380.0" layoutY="24.0" prefHeight="25.0" prefWidth="114.0" text="Detaills ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="LancerButton" layoutX="113.0" layoutY="193.0" mnemonicParsing="false" onAction="#LancerAction" text="Lancer" />
+      <Accordion />
+   </children>
+</AnchorPane>
